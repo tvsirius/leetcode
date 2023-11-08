@@ -6,4 +6,4 @@ Folders represent study pathes, subfolders are problems with problem leetcode nu
 
 ## Folders:
 
-*leetcode\TopInterview150-part1* - [Top Interview 150](https://leetcode.com/studyplan/top-interview-150/)
+*TopInterview150* - [Top Interview 150](https://leetcode.com/studyplan/top-interview-150/)
