@@ -14,9 +14,6 @@ class Solution:
         Args:
             nums (list[int]): List to process
 
-        Raises:
-            AssertionError: if list is not sorted!_
-
         Returns:
             int: Valid elements (with appear at max two times) in nums count
         """
