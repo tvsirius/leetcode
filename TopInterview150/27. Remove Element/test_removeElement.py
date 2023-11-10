@@ -17,11 +17,13 @@ for (int i = 0; i < actualLength; i++) {
 }
 If all assertions pass, then your solution will be accepted.
 """
+
+
 from removeElement import Solution
 
 s=Solution()
 
-print("Test of leetcode\TopInterview150\27. Remove Element")
+print("Test of leetcode/TopInterview150/27. Remove Element \n")
 
 nums = [3,2,2,3]
 val = 3

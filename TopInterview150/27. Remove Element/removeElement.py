@@ -8,6 +8,15 @@ Return k.
 """
 class Solution:
     def removeElement(self, nums: list[int], val: int) -> int:
+        """Removes all val occurrences from list nums
+
+        Args:
+            nums (list[int]): list to process
+            val (int): element to remove
+
+        Returns:
+            int: k - number of valid (non equal to val) elements
+        """
         # processing in place require moving all elements except val in the beginning of the list
         # i will loop thought with offset, counting number of VAL found so far, 
         # giving me the idea of where to move next valid element 

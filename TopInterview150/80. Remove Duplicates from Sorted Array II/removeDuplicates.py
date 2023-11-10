@@ -9,6 +9,17 @@ Do not allocate extra space for another array. You must do this by modifying the
 """
 class Solution:
     def removeDuplicates(self, nums: list[int]) -> int:
+        """Remove double duplicates (valid elements may appear at maximum two times) from sorted list in place and return numbers of valid elements
+
+        Args:
+            nums (list[int]): List to process
+
+        Raises:
+            AssertionError: if list is not sorted!_
+
+        Returns:
+            int: Valid elements (with appear at max two times) in nums count
+        """
         # I am looping through the list and on each iteration I either move element (so all valid elements is moved in order from the start of list),
         # either skip in given valid-non-valid condition (max of 2 occurrences)
         # I will need to keep m3 m2 m1 variables with the copy of unmodified list [i-2][i-1][i], which will be not affected by moving process
@@ -28,5 +39,5 @@ class Solution:
                 nums[i-offset]=nums[i]
             else:
                 offset+=1
-        # offset = number of unvalid elements
+        # offset = number of invalid elements
         return len(nums)-offset

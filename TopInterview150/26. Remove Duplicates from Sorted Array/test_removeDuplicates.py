@@ -14,11 +14,13 @@ for (int i = 0; i < k; i++) {
 }
 If all assertions pass, then your solution will be accepted.
 """
+
+
 from removeDuplicates import Solution
 
 s=Solution()
 
-print("Test of leetcode\TopInterview150\80. Remove Duplicates from Sorted Array II")
+print("Test of leetcod/TopInterview150/26. Remove Duplicates from Sorted Array\n")
 
 
 nums = [1,1,2]

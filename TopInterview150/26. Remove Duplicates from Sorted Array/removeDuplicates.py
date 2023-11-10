@@ -8,6 +8,17 @@ Return k.
 """
 class Solution:
     def removeDuplicates(self, nums: list[int]) -> int:
+        """Remove duplicates from sorted list in place and return numbers of unique elements
+
+        Args:
+            nums (list[int]): List to process
+
+        Raises:
+            AssertionError: if list is not sorted!
+
+        Returns:
+            int: Unique elements in nums count
+        """
         # I am looping through the list and on each iteration I either move element (so all unique elements is moved in order from the start of list),
         # either skip and increase offset, which tells me how many duplicate i have found so far
         
