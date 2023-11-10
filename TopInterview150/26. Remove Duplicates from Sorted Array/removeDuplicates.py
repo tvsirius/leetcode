@@ -8,13 +8,22 @@ Return k.
 """
 class Solution:
     def removeDuplicates(self, nums: list[int]) -> int:
-
-        offset=0
+        # I am looping through the list and on each iteration I either move element (so all unique elements is moved in order from the start of list),
+        # either skip and increase offset, which tells me how many duplicate i have found so far
+        
+        offset=0 # no duplicate in the start
+        
         for i in range(1,len(nums)):
+            # if element at i it is equal to i-1 then it is a duplicate
             if nums[i]>nums[i-1]:
+                # we have analyzed and saved all elements before i, so it is safe to write to i-offset 
                 nums[i-offset]=nums[i]
+                
             elif nums[i]==nums[i-1]:
+                # this element will be overwritten 
                 offset+=1
-            else:
+                
+            else: #special check, may be not needed! 
                 raise AssertionError("Nums not sorted!")
+        # offset is a count of found duplicates
         return len(nums)-offset

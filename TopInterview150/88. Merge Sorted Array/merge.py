@@ -13,11 +13,11 @@ class Solution:
         """
         # position to write element, decreasing, starting from the end of nums1
         counter = m + n
-        #  but loop conditon is while both nums1 and nums2 have elements
+        #  but loop condition is while both nums1 and nums2 have elements
         while m > 0 and n > 0:
             # decreasing counter in any case
             counter -= 1
-            # we will go throught the two lists from the given pointers, decreasing them
+            # we will go thought the two lists from the given pointers, decreasing them
             # as nums1 have space reserved 
             # merge sort will be performed by moving from and decreasing index of list with greater element
             if nums1[m - 1] > nums2[n - 1]:
